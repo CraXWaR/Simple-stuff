@@ -15,9 +15,11 @@ function taskList() {
 
         let delBtn = document.createElement('button');
         delBtn.textContent = 'delete';
+        delBtn.id = 'deleteBtn'
         delBtn.addEventListener('click', onDelete);
         let doneBtn = document.createElement('button');
-        doneBtn.textContent = 'complete';
+        doneBtn.textContent = 'done';
+        doneBtn.id = 'completeBtn'
         doneBtn.addEventListener('click', onComplete);
 
         liElement.appendChild(delBtn);

@@ -1,0 +1,60 @@
+main {
+    width: 50%;
+    margin: 2rem auto;
+    text-align: center;
+    padding: 1rem;
+    border: 3px solid blue;
+    border-radius: 10px;
+}
+main div {
+    display: block;
+}
+
+#taskBtn {
+    text-align: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: #73AD21;
+}
+
+#onGoing label {
+    font-size: 20px;
+}
+
+#tasks {
+    border: 3px solid #737f9c;
+    border-radius: 10px;
+    height: 20px;
+}
+
+#completed label {
+    font-size: 30px;
+}
+
+li {
+    font-size: 20px;
+    padding-bottom: 1rem;
+    list-style-type: none;  
+    font-size: 25px;
+}
+
+li button {
+    text-align: center;
+    margin: 5px;
+    border-radius: 10px;
+}
+
+#completeBtn {
+    color: black;
+    font-size: 1rem;
+    font-weight: bold;
+    background-color: #73AD21;
+}
+
+#deleteBtn {
+    color: black;
+    font-size: 1rem;
+    font-weight: bold;
+    background-color: red;
+}

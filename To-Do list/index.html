@@ -5,25 +5,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="app.js"></script>
+    <link rel="stylesheet" href="style.css">
     <title>TODO List</title>
 </head>
 <body onload="taskList()">
     <main>
-        <h1>Todo List</h1>
-        <div>
+        <h1>To-Do List</h1>
+        <div id="onGoing">
             <label for="task">Task: </label>
             <input type="text" id="tasks" placeholder="Add Task">
-            <input id="taskBtn" type="button" value="Submit">
+            <input id="taskBtn" type="button" value="Add">
         </div>
 
         <ul>
             
         </ul>
 
-        <div>
+        <div id="completed">
             <label for="task">Finished tasks: </label>
             <div id="complete">
-                
+
             </div>
         </div>
 
