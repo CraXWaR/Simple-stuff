@@ -6,27 +6,28 @@ function addTable() {
         let dateValue = document.getElementById('date').value;
         let amountValue = document.getElementById('amount').value;
 
-        const mainTable = document.querySelector('tbody')
-
-        let trElement = document.createElement('tr');
-        let nameTable = document.createElement('td')
-        let dateTable = document.createElement('td')
-        let amountTable = document.createElement('td')
+        const tableElement = document.querySelector('table');
+        const tbodyElement = document.querySelector('tbody');
 
         const delBtn = document.createElement('button');
-        delBtn.textContent = 'delete';
+        delBtn.textContent = 'Delete';
         delBtn.addEventListener('click', onDelete)
 
-        console.log(nameTable, dateTable, amountTable);
-        trElement.append(nameTable);
-        trElement.append(dateTable);
-        trElement.append(amountTable);
-        trElement.append(delBtn);
+        tbodyElement.innerHTML += `
+        <tr>
+            <td>${nameValue}</td>
+            <td>${dateValue}</td>
+            <td>$${amountValue}</td>
+           <td><button class="delBtn">Delete</button></td> 
+        </tr>`
 
-        mainTable.append(trElement);
+        tableElement.addEventListener('click', onDelete);
 
         function onDelete(e) {
-            e.currentTarget.remove();           
+            if (!e.target.classList.contains('delBtn')) {
+                return;
+            }
+            e.target.closest('tr').remove();
         }
     }
 }
