@@ -6,6 +6,10 @@ function addTable() {
         let dateValue = document.getElementById('date').value;
         let amountValue = document.getElementById('amount').value;
 
+        if (nameValue == '' || dateValue == '' || amountValue == '') {
+            return alert('All fields are required!')
+        }
+
         const tableElement = document.querySelector('table');
         const tbodyElement = document.querySelector('tbody');
 
@@ -20,6 +24,10 @@ function addTable() {
             <td>$${amountValue}</td>
            <td><button class="delBtn">Delete</button></td> 
         </tr>`
+
+        document.getElementById('name').value = '';
+        document.getElementById('date').value = '';
+        document.getElementById('amount').value = '';
 
         tableElement.addEventListener('click', onDelete);
 
