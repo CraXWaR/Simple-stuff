@@ -22,7 +22,7 @@ function addTable() {
             <td>${nameValue}</td>
             <td>${dateValue}</td>
             <td>$${amountValue}</td>
-           <td><button class="delBtn">Delete</button></td> 
+           <td><button class="delBtn">✖</button></td> 
         </tr>`
 
         document.getElementById('name').value = '';

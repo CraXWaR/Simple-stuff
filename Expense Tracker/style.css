@@ -2,9 +2,14 @@ main {
     text-align: center;
 }
 
+.inputs {
+    margin-bottom: 1rem;
+}
+
 table {
     border-collapse: collapse;
-    margin: 25px 0;
+    margin-left: auto;
+    margin-right: auto;
     font-size: 0.9em;
     font-family: sans-serif;
     min-width: 400px;
@@ -29,6 +34,7 @@ table tbody tr {
 
 table tbody td {
     border-right: 1px solid #dddddd;
+    border-left: 1px solid #dddddd;
 }
 
 table tbody tr:nth-of-type(odd) {
@@ -42,10 +48,42 @@ table tbody tr:nth-of-type(even) {
 }
 
 table tbody tr:last-of-type {
-    border-bottom: 2px solid #009879;
+    border-bottom: 2px solid gery;
 }
 
 table tbody tr.active-row {
     font-weight: bold;
     color: #009879;
+}
+
+.delBtn {
+    background-color: red;
+    width: 50%;
+    height: 50%;
+    text-align: center;
+}
+
+#button {
+    background-color: green;
+    width: 2em;
+    height: 2em;
+    text-align: left;
+}
+
+#name {
+    margin-right: 0.5em;
+    width: 15em;
+    height: 2em; 
+}
+
+#date {
+    margin-right: 0.5em;
+    width: 8em;
+    height: 2em; 
+}
+
+#amount {
+    margin-right: 0.5em;
+    width: 8em;
+    height: 2em;   
 }
