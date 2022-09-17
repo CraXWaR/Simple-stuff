@@ -35,7 +35,9 @@ function addTable() {
             if (!e.target.classList.contains('delBtn')) {
                 return;
             }
-            e.target.closest('tr').remove();
+            if (confirm('Are u sure u want to delete this expense?')) {
+                e.target.closest('tr').remove();
+            }
         }
     }
 }
