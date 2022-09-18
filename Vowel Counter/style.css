@@ -1,3 +1,39 @@
 body {
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-size: 1.5rem;
+    margin-top: -10em;
+}
+
+h1 {
+    font-weight: 900;
+    text-shadow: 1px 1px red;
+}
+
+input {
+    position: relative;
+    font-size: 1.5em;
+    background-color: #505050;
+    padding: 3px;
+    display: inline-block;
+    border-radius: 100em;
+    border-color: black;
+    margin-bottom: 0.5em;
+}
+
+input::placeholder {
+    padding-left: 10px;
+}
+
+button {
+    background-color: green;
+    display: inline-block;
+    font-size: 1rem;
+    font-weight:700;    
+    border-radius: 100em;
+    width: 10em;
+    height: 2em;
 }
