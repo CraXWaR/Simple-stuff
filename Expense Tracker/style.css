@@ -73,17 +73,17 @@ table tbody tr.active-row {
 #name {
     margin-right: 0.5em;
     width: 15em;
-    height: 2em; 
+    height: 2em;
 }
 
 #date {
     margin-right: 0.5em;
     width: 8em;
-    height: 2em; 
+    height: 2em;
 }
 
 #amount {
     margin-right: 0.5em;
     width: 8em;
-    height: 2em;   
+    height: 2em;
 }

@@ -32,7 +32,7 @@ function taskList() {
         function onDelete() {
             liElement.remove();
         }
-        
+
         function onComplete(e) {
             let completedTasks = document.getElementById('complete');
             let task = e.currentTarget.parentNode
